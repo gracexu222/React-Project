@@ -9,3 +9,7 @@ React-project practice
 ## Select-all-items
 
 ### https://select-all-items-3sw2leewr-gracexu222s-projects.vercel.app
+
+## Shopping - cart
+
+### https://shopping-cart-nett6gvus-gracexu222s-projects.vercel.app
