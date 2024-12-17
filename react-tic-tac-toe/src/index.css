@@ -1,0 +1,91 @@
+/* General styling for the TicTacToe game container component */
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+}
+
+/* Styling for the title component */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Styling for the status message component (like winner or next player) */
+.status {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Styling for the Board component containing rows of squares */
+.board-row {
+  display: flex;
+}
+
+/* Styling for the Square component within the Board */
+.square {
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the Square component */
+.square:hover {
+  background-color: #f0f0f0;
+}
+
+/* Active (pressed) effect for the Square component */
+.square:active {
+  background-color: #ddd;
+}
+
+/* Reset default browser styles for the button in the Square component */
+button.square {
+  padding: 0;
+  outline: none;
+  border: none;
+  background: none;
+  font: inherit;
+}
+
+/* Add shadow effect to enhance visibility for the Square component */
+.square {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the winning Square component */
+.winning-square {
+  background-color: #4caf50 !important;
+  color: #fff;
+}
+
+/* Responsive design for smaller screens for all components */
+@media (max-width: 600px) {
+  .square {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .status {
+    font-size: 1.2rem;
+  }
+}
