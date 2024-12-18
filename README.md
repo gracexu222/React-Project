@@ -13,3 +13,7 @@ React-project practice
 ## Shopping - cart
 
 ### https://shopping-cart-nett6gvus-gracexu222s-projects.vercel.app
+
+## Simple-Quiz
+
+### https://simple-quiz-o5aae4dvj-gracexu222s-projects.vercel.app/
