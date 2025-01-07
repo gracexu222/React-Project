@@ -1,0 +1,46 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "task": "Learn React",
+      "completed": false,
+      "date": "2025-01-06",
+      "description": "Complete the React basics tutorial."
+    },
+    {
+      "id": "2",
+      "task": "Set up JSON Server",
+      "completed": true,
+      "date": "2025-01-05",
+      "description": "Set up a mock backend for testing."
+    },
+    {
+      "id": 3,
+      "task": "New Task",
+      "completed": false,
+      "date": "2025-01-07",
+      "description": "New todo description"
+    },
+    {
+      "id": 4,
+      "task": "New Task",
+      "completed": false,
+      "date": "2025-01-07",
+      "description": "New todo description"
+    },
+    {
+      "id": 5,
+      "task": "New Task",
+      "completed": false,
+      "date": "2025-01-07",
+      "description": "New todo description"
+    },
+    {
+      "id": 6,
+      "task": "New Task",
+      "completed": false,
+      "date": "2025-01-07",
+      "description": "New todo description"
+    }
+  ]
+}
