@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import { percentage } from "../../personalprofile/node_modules/tailwindcss/src/util/dataTypes";
 
 function App() {
   return (

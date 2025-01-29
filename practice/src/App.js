@@ -10,6 +10,7 @@ function App() {
       <ProductListFilter />
       <TodoList />
       <Accordion />
+      <MenuSelect />
     </div>
   );
 }
@@ -446,6 +447,44 @@ const Accordion = () => {
           {isOpen && <div className="content-text">{el.text}</div>}
         </div>
       ))}
+    </div>
+  );
+};
+
+const MenuSelect = () => {
+  const [selectedOption, setSelectedOption] = useState("home");
+
+  const handleSelectChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
+  const contentMap = {
+    home: "Welcome to the Home Page!",
+    about: "This is the About Page.Learn more about us.",
+    services: "This is the services page.",
+    contact: "Get in touch on the Contact Page.",
+  };
+
+  return (
+    <div>
+      {/* Header Menu */}
+      <h2>Select a Menu Option</h2>
+      <select value={selectedOption} onChange={handleSelectChange}>
+        <option value="">-- Choose an option --</option>
+        <option value="home">Home</option>
+        <option value="about">About</option>
+        <option value="services">Services</option>
+        <option value="contact">Contact</option>
+      </select>
+      {selectedOption && (
+        <p>
+          You selected:<strong>{selectedOption}</strong>
+        </p>
+      )}
+      {/* Content Box */}
+      <div>
+        <h3>{selectedOption.toUpperCase()}</h3>
+        <p>{contentMap[selectedOption]}</p>
+      </div>
     </div>
   );
 };
